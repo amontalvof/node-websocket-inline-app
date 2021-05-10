@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const colors = require('colors/safe');
 
-const { socketController } = require('./sockets/controller');
+const { socketController } = require('../sockets/controller');
 
 class Server {
     constructor() {
