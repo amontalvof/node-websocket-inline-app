@@ -2,7 +2,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #6951F0;
+    background-color: #6951f0;
     color: white;
 }
 
@@ -12,25 +12,24 @@ table {
     text-align: center;
 }
 
-.ticket-actual {
+.current-ticket {
     background-color: #282828;
 }
 
-.ticket-actual-numero {
+.current-ticket-number {
     font-size: 80px;
 }
 
-.ticket-actual-escritorio {
+.ticket-current-desktop {
     font-size: 45px;
 }
 
-.ticket-secundario {
+.secondary-ticket {
     font-size: 25px;
 }
 
+/* New-ticket */
 
-/* Nuevo-ticket */
-
-#lblNuevoTicket {
+#lblNewTicket {
     font-size: 70px;
 }

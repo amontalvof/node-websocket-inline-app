@@ -1,4 +1,4 @@
-# WebSocket Line App
+# WebSocket Inline App
 
 ## Technologies
 
