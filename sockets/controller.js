@@ -4,6 +4,7 @@ const ticketControl = new TicketControl();
 
 const socketController = (socket) => {
     socket.emit('last-ticket', ticketControl.lastTicket);
+    socket.emit('actual-status', ticketControl.last4);
 
     socket.on('next-ticket', (payload, callback) => {
         const next = ticketControl.next();
@@ -17,7 +18,11 @@ const socketController = (socket) => {
                 msg: 'The desk is required',
             });
         }
+
         const ticket = ticketControl.attendTicket(desk);
+
+        socket.broadcast.emit('actual-status', ticketControl.last4);
+
         if (!ticket) {
             callback({
                 ok: false,
